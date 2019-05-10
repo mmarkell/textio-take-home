@@ -1,0 +1,92 @@
+{
+    "simple": [
+        {
+            "startOffset": 4,
+            "endOffset": 16,
+            "color": "#d9f593",
+            "priority": 1
+        },
+        {
+            "startOffset": 17,
+            "endOffset": 31,
+            "color": "#e8e8e8",
+            "priority": 1
+        }
+    ],
+    "mergeLeft": [
+        {
+            "startOffset": 1,
+            "endOffset": 20,
+            "color": "#d9f593",
+            "priority": 0
+        },
+        {
+            "startOffset": 10,
+            "endOffset": 30,
+            "color": "#e8e8e8",
+            "priority": 1
+        }
+    ],
+    "mergeRight": [
+        {
+            "startOffset": 1,
+            "endOffset": 20,
+            "color": "#d9f593",
+            "priority": 1
+        },
+        {
+            "startOffset": 10,
+            "endOffset": 30,
+            "color": "#e8e8e8",
+            "priority": 0
+        }
+    ],
+    "surroundExisting": [
+        {
+            "startOffset": 10,
+            "endOffset": 20,
+            "color": "#d9f593",
+            "priority": 0
+        },
+        {
+            "startOffset": 1,
+            "endOffset": 30,
+            "color": "#e8e8e8",
+            "priority": 1
+        }
+    ],
+    "multipleTypes": [
+        {
+            "startOffset": 10,
+            "endOffset": 20,
+            "color": "#d9f593",
+            "priority": 0
+        },
+        {
+            "startOffset": 1,
+            "endOffset": 30,
+            "color": "#e8e8e8",
+            "priority": 1
+        },
+        {            
+            "startOffset": 40,
+            "endOffset": 50,
+            "color": "#e8e8e8",
+            "priority": 1
+        }
+    ],
+    "duplicates": [
+        {
+            "startOffset": 1,
+            "endOffset": 20,
+            "color": "#d9f593",
+            "priority": 1
+        },
+        {
+            "startOffset": 1,
+            "endOffset": 20,
+            "color": "#d9f593",
+            "priority": 1
+        }
+    ]
+}
