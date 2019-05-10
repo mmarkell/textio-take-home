@@ -37,26 +37,25 @@ export default class Utils {
       let newBlockOverlapsRight = Utils.overlapsRight(currStart, currEnd);
 
       blocks.forEach(existingBlock => {
-
-        // block surrounds           <<< [[[      ]]] >>> 
+        // block surrounds            <<< [[[      ]]] >>> 
         if (newBlockSurrounds(existingBlock)) {
           blocks = blocks.filter(i => { return i !== existingBlock; });
         }
 
-        // block surrounded          [[[ <<<      >>> ]]]
+        // block surrounded           [[[ <<<      >>> ]]]
         if (newBlockSurrounded(existingBlock)) {
           blocks = blocks.filter(i => { return i !== existingBlock; })
           blocks.push({ start: existingBlock.start, end: currStart, color: existingBlock.color });
           blocks.push({ start: currEnd, end: existingBlock.end, color: existingBlock.color });
         }
 
-        // block overlaps left      <<< [[[      >>> ]]]
+        // block overlaps left        <<< [[[      >>> ]]]
         if (newBlockOverlapsLeft(existingBlock)) {
           blocks = blocks.filter(i => { return i !== existingBlock; })
           blocks.push({ start: currEnd, end: existingBlock.end, color: existingBlock.color });
         }
 
-        // block overlaps right     [[[ <<<      ]]] >>>
+        // block overlaps right       [[[ <<<      ]]] >>>
         if (newBlockOverlapsRight(existingBlock)) {
           blocks = blocks.filter(i => { return i !== existingBlock; })
           blocks.push({ start: existingBlock.start, end: currStart, color: existingBlock.color });
