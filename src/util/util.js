@@ -70,13 +70,13 @@ export default class Utils {
 
   static overlapsLeft = (start, end) => {
     return (other) => {
-      return other.start > start && other.end > end && other.start < end;
+      return other.start >= start && other.end > end && other.start < end;
     }
   }
 
   static overlapsRight = (start, end) => {
     return (other) => {
-      return other.start < start && other.end < end && other.end > start;
+      return other.start < start && other.end <= end && other.end > start;
     }
   }
 
@@ -88,7 +88,7 @@ export default class Utils {
 
   static surrounds = (start, end) => {
     return (other) => {
-      return other.start > start && other.end < end;
+      return other.start >= start && other.end <= end;
     }
   }
 

@@ -24,8 +24,7 @@ export default class HighlightedText extends React.Component {
         {highlights.map(highlight => (
           <span key={highlight.id} style={{
             background: highlight.color,
-            borderRadius: 20,
-            margin: 5
+            borderRadius: 20
           }}>
             {highlight.chars}
           </span>
