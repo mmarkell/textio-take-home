@@ -4,11 +4,9 @@
 Open [http://localhost:3000](http://localhost:3000).
 
 # Known issues / future work #
-* Slow runtime on highlighting algorithm. I should make it in-place and binary search to find blocks to overwrite.
-* css border radius does not align with spec
+* I need to convert the "flat" structure of the spans to a nested one to get the correct radius formatting.
 * json formatting could be better for rules input
-* Write unit tests to make sure the testcases
-output correct `<span>` blocks.
+* Write unit tests to make sure the testcases output correct `<span>` blocks.
 
 # Code Structure #
 ## Components ##
