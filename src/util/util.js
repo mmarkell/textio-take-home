@@ -11,7 +11,7 @@ export default class Utils {
   static getHighlights(text, rules) {
     rules.sort((a, b) => { return b.priority - a.priority });
     let mergedRules = Utils.merge(text, rules);
-    return uniqBy(Utils.getWordBlocks(mergedRules, text), 'id');
+    return Utils.getWordBlocks(mergedRules, text);
   }
 
   /*
